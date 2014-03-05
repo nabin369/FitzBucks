@@ -1,0 +1,17 @@
+%h1 New Profit Loss Report
+%section
+  %form.form-horizontal{:role => "form",
+    :method => :post, :action => profit_loss_client_index_path}
+    .form-group
+      %label.control-label.col-sm-1{:for => "start-date"} Start Date
+      .col-sm-2
+        %input#start-date.form-control{:type => "date", :name => "start_date",
+          :required => "required"}
+    .form-group
+      %label.control-label.col-sm-1{:for => "end-date"} End Date
+      .col-sm-2
+        %input#end-date.form-control{:type => "date", :name => "end_date",
+          :required => "required"}
+    .form-group
+      .col-sm-offset-1.col-sm-1
+        %button.btn.btn-default{type: "submit"} Create

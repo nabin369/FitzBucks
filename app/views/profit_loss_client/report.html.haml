@@ -1,0 +1,34 @@
+%h1 Client Profit Loss Report
+
+- total_stakes   = 0
+- total_returns  = 0
+- total_clients  = 0
+- total_bets     = 0
+
+%table.table.table-bordered
+  %tbody
+    %tr
+      %th Client
+      %th Num of Bets
+      %th Total Stakes
+      %th Total Returns
+      %th P/L
+  - @client_presenters.each do |key, client_presenter|
+    %tbody
+      %tr
+        %td= client_presenter.client_name
+        %td= client_presenter.num_of_bets
+        %td.amount= client_presenter.total_stakes/100.0
+        %td.amount= client_presenter.total_returns/100.0
+        %td.amount= client_presenter.profit_loss/100.0
+        - total_clients += 1
+        - total_bets    += client_presenter.num_of_bets
+        - total_stakes  += client_presenter.total_stakes
+        - total_returns += client_presenter.total_returns
+  %tbody
+    %tr
+      %td= "Total Clients: #{total_clients}"
+      %td= "Total Bets: #{total_bets}"
+      %td.amount= "Total Stakes: #{total_stakes/100.0}"
+      %td.amount= "Total Returns: #{total_returns/100.0}"
+      %td.amount= "Total P/L: #{(total_returns - total_stakes)/100.0}"
