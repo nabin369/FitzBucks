@@ -27,7 +27,6 @@
         - total_bets    += client_presenter.num_of_bets
         - total_stakes  += client_presenter.total_stakes
         - total_returns += client_presenter.total_returns
-    
     - client_presenter.sport.each do |key, sport|
       %tbody
         %tr{:class => 'sport'}
@@ -37,7 +36,6 @@
           %td.amount= sport.total_stakes/100.0
           %td.amount= sport.total_returns/100.0
           %td.amount= sport.profit_loss/100.0
-
   %tbody
     %tr
       %td= "Total Clients: #{total_clients}"

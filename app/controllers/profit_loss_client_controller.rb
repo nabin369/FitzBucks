@@ -10,10 +10,4 @@ class ProfitLossClientController < ApplicationController
     
     render "report"
   end
-
-  def show
-  	@client = params[:first_name]
-
-  	render "show"
-  end
 end

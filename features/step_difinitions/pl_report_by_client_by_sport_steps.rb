@@ -29,15 +29,15 @@ Then(/^I should see Client with sport name$/) do
   end
 end
 
-When(/^there is a Bet, Client$/) do
-  Bet.create(client_id: 2, sport_id: 2, stake: 101, returns: 201, settled_at: "2014-04-28")
-  Client.create(id: 2, first_name: 'Tom', last_name: 'League')
-end
+# When(/^there is a Bet, Client$/) do
+#   Bet.create(client_id: 2, sport_id: 2, stake: 101, returns: 201, settled_at: "2014-04-28")
+#   Client.create(id: 2, first_name: 'Tom', last_name: 'League')
+# end
 
-Then(/^I should see Client with sport name unknown$/) do
-  @client_presenter.each do |key, clients| 
-      clients.client_name.should eq('Tom League')
-      clients.sport.each { |key, sports| sports.name.should eq('Unknown')}
-  end
-end
+# Then(/^I should see Client with sport name unknown$/) do
+#   @client_presenter.each do |key, clients| 
+#       clients.client_name.should eq('Tom League')
+#       clients.sport.each { |key, sports| sports.name.should eq('Unknown')}
+#   end
+# end
 

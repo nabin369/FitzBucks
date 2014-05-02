@@ -7,7 +7,6 @@ class ProfitLossClientSportPresenter
 	attr_accessor :name
 
 	class << self
-		
 		def presented(bet)
 			presenter = {}
 

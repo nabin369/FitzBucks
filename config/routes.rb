@@ -59,6 +59,4 @@ Fitzbucks::Application.routes.draw do
   resources :profit_loss_client, :only => [:new, :create]
 
   match '/' => 'welcome#index', :as => :root
-
-  get 'profit_loss_client/show' => 'profit_loss_client#show', :as => :show
 end

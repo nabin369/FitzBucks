@@ -19,15 +19,10 @@
 // $(function(){ $(document).foundation(); });
 
 function change(){
-
     $('.button').click(function(){
-
     	if($('.sport').slideDown()) {
     		$('.sport').slideUp();
     	}
-    	else {
-    		$('.sport').slideDown();
-    	}
+    	else { $('.sport').slideDown(); }
     })
-
 };
