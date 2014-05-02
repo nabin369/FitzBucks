@@ -14,3 +14,20 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap
+
+
+// $(function(){ $(document).foundation(); });
+
+function change(){
+
+    $('.button').click(function(){
+
+    	if($('.sport').slideDown()) {
+    		$('.sport').slideUp();
+    	}
+    	else {
+    		$('.sport').slideDown();
+    	}
+    })
+
+};
