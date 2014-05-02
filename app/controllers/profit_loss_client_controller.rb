@@ -7,7 +7,13 @@ class ProfitLossClientController < ApplicationController
     end_date   = DateTime.parse(params[:end_date])
 
     @client_presenters = ProfitLossClientPresenter.present(start_date, end_date)
-
+    
     render "report"
+  end
+
+  def show
+  	@client = params[:first_name]
+
+  	render "show"
   end
 end

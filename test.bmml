@@ -1,0 +1,20 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="873" measuredH="416" mockupW="513" mockupH="400">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="360" y="16" w="513" h="400" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>localhost%3A//3000</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::FieldSet" x="382" y="101" w="200" h="24" measuredW="200" measuredH="170" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%09P/L%20By%20Client</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::DataGrid" x="382" y="166" w="468" h="216" measuredW="431" measuredH="175" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <text>Client%27s%20name%20%2C%20Sport%2C%20Total%20Stakes%2C%20Total%20Returns%2C%20P/L%0AGiacomo%20Guilizzoni%5CrFounder%20%26%20CEO%2C%20%2C%201%2C%202%2C%201%0A%20%2C%20Football%2C%201%2C%202%2C%201%0AMarco%20Botton%5CrTuttofare%2C%20%2C%202%2C%206%2C%204%0A%20%2C%20Horse%20Racing%2C%201%2C%202%2C%201%0A%20%2C%20Golf%2C%202%2C%205%2C%203%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

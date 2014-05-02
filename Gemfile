@@ -20,8 +20,11 @@ gem 'populator'
 
 group :test do
   gem 'rspec-rails'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'launchy'
 
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'capybara-webkit'
   gem 'capybara'

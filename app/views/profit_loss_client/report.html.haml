@@ -10,6 +10,7 @@
     %tr
       %th Client
       %th Num of Bets
+      %th Sports
       %th Total Stakes
       %th Total Returns
       %th P/L
@@ -17,7 +18,8 @@
     %tbody
       %tr
         %td= client_presenter.client_name
-        %td= client_presenter.num_of_bets
+        %td.amount= client_presenter.num_of_bets
+        %td
         %td.amount= client_presenter.total_stakes/100.0
         %td.amount= client_presenter.total_returns/100.0
         %td.amount= client_presenter.profit_loss/100.0
@@ -25,6 +27,17 @@
         - total_bets    += client_presenter.num_of_bets
         - total_stakes  += client_presenter.total_stakes
         - total_returns += client_presenter.total_returns
+
+    - client_presenter.sport.each do |key, sport|
+      %tbody
+        %tr
+          %td
+          %td
+          %td= sport.name
+          %td.amount= sport.total_stakes/100.0
+          %td.amount= sport.total_returns/100.0
+          %td.amount= sport.profit_loss/100.0
+
   %tbody
     %tr
       %td= "Total Clients: #{total_clients}"

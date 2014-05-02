@@ -1,7 +1,11 @@
+require_relative './profit_loss_client_sport_presenter'
+require_relative './profit_loss_module'
+
 class ProfitLossClientPresenter
 
-  attr_accessor :total_stakes, :total_returns, :num_of_bets, :num_of_winners,
-                :first_name, :last_name
+  include ProfitLoss
+
+  attr_accessor :num_of_winners, :first_name, :last_name, :sport_bet, :sport
 
   class << self
     def present(start_date, end_date)
@@ -27,6 +31,7 @@ class ProfitLossClientPresenter
     @total_returns  = 0
     @num_of_bets    = 0
     @num_of_winners = 0
+    @sport_bet      = []
   end
 
   def add_bet(bet)
@@ -36,13 +41,16 @@ class ProfitLossClientPresenter
     @num_of_winners += 1 if bet.returns > 0
     @first_name      = bet.client.first_name
     @last_name       = bet.client.last_name
+    @sport_bet      << bet
+    sport_presenter(sport_bet)
   end
 
-  def profit_loss
-    @total_returns - @total_stakes
+  def sport_presenter(bets)
+    @sport           = ProfitLossClientSportPresenter.presented(bets)
   end
 
   def client_name
     "#{@first_name} #{@last_name}"
   end
+
 end
