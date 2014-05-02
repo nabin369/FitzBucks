@@ -19,7 +19,7 @@
       %tr
         %td= client_presenter.client_name
         %td.amount= client_presenter.num_of_bets
-        %td.btn{:disable => true, :class => 'button', :id => 'button_sport', :onclick => "javascript:change()"} view
+        %td.btn{:class => 'button', :id => 'button_sport', :onclick => "javascript:change()"} view
         %td.amount= client_presenter.total_stakes/100.0
         %td.amount= client_presenter.total_returns/100.0
         %td.amount= client_presenter.profit_loss/100.0
@@ -29,8 +29,8 @@
         - total_returns += client_presenter.total_returns
     
     - client_presenter.sport.each do |key, sport|
-      %tbody{:class => 'sport'}
-        %tr
+      %tbody
+        %tr{:class => 'sport'}
           %td
           %td
           %td= sport.name
