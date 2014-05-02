@@ -1,57 +1,5 @@
 # Fitzdares
-
-Fitzdares is a members only bookmakers located in Notting Hill. We pride ourselves on delievering the best customer experience.
-
-Last year we launched our bespoke in house trading platform to huge success. Parts of the system include: taking big data arriving over a satellite link, render it in a rich and fast UI to multiple (mobile) clients so they can initiate enormous transactions backed by complex domain logic. Securely, and do it in under a second.
-
-We are looking for a full time member of staff to join our mix of in-house and freelance development team, and would be looking for someone who could work in the office.
-
-Some of your responsibilities would be, but not limited to:
-
-- Prototyping new ideas
-- Investigating new technologies
-- Implementing new features
-- Maintaining code
-- Supporting the other developers
-
-Essential technologies:
-
-- HTML
-- Javascript
-- Ruby
-- Rails
-- MySQL
-- Keen mind to learn!!!
-
-Bonus points:
-
-- Any of the technologies listed below
-- Your sporting knowledge should include
-  - Being able to spell Football
-
-Other technologies:
-
-- SASS
-- CoffeeScript
-- jQuery
-- Backbonejs
-- HAML
-- Websockets
-- Capistrano
-- Jasmine
-- Cucumber
-- Capybara
-- RSpec
-- JenkinsCI
-- Linux
-- Git
-- Puppet
-
-Pay and benefits:
- - We offer competitive pay based on your competencies, experience, and skills.
- - You would be included in the generous company bonus and pension scheme.
-
-If you're interested in a position where you're given lots of responsibility and plenty of room to grow and develop, please take the test below. Once you've finished please e-mail your solution to either Simon (simon@fitzdares.com) or Ed (ed@fitzdares.com)
+It's a Technical test for London tech company
 
 # Welcome to FitzBucks
 ## Background
